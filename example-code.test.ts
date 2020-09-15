@@ -1,9 +1,17 @@
 import { helloWorld } from './example-code';
 
-describe('Testing my test function', () => {
-  it('prints something', () => {
+describe('example-code functions', () => {
+
+  beforeEach(() => {
+    // override and mock
     console.log = jest.fn();
+  });
+
+  it('helloWorld() logs to console', () => {
+    // the function to be tested
     helloWorld();
-    expect(console.log).toHaveBeenCalled();
+
+    // assert what is expected from function call
+    expect(console.log).toHaveBeenCalledTimes(1);
   })
 })
