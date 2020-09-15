@@ -11,6 +11,14 @@ by pressing the fork button on the upper right side.
 * change the package.json to your needs
 * ...enjoy with your new project :)!
 
+## Why forking?
+
+Have a look at this [fork](https://github.com/taitruong/typescript-test). In the meanwhile the main repo has changed. In the forked repo you see something like this:
+
+> This branch is XYZ commits behind software-developer-org:master. | Pull request | Compare
+
+Now you can go to '[Compare](https://github.com/software-developer-org/typescript-template/compare/master...taitruong:master)' and click on '[switching the base for your comparison](https://github.com/taitruong/typescript-test/compare/master...software-developer-org:master)' and you can create a pull request for getting all the changes into your fork.
+
 # Setup tool chain
 
 * **Git:**
