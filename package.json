@@ -1,8 +1,7 @@
 {
-  "name": "<project name>",
+  "name": "typescript-template",
   "version": "1.0.0",
   "description": "<project description>",
-  "main": "<filename>",
   "scripts": {
     "test": "jest",
     "build": "tsc"
