@@ -21,7 +21,7 @@ Now you can go to '[Compare](https://github.com/software-developer-org/typescrip
 
 # Setup tool chain
 
-* **Git:**
+## Git
 
 Install and configure git following this [git-started](https://github.com/software-developer-org/git-started) as a basic tutorial.
 
@@ -29,7 +29,7 @@ In case you are new to git: step back, take your time, and work through the tuto
 
 Once you have mastered the basics of git followed these intermediate [git-bootcamp](https://github.com/software-developer-org/bootcamp) exercises.
 
-* **Node.js:**
+## Node.js
 
 You can find the latest version for your system at [nodejs.org](https://nodejs.org/en/). There are two versions:
 
@@ -38,17 +38,17 @@ You can find the latest version for your system at [nodejs.org](https://nodejs.o
 
 If you are not implementing in Node, or do just TypeScript, then go for the LTS. This will also make your life easier when integrating other projects or apis.
 
-* **Node Package Manager (npm)**
+## Node Package Manager (npm)
 
 NOTE: If you install Node.js it also includes npm.
 
 npm is (a) a [registry](https://docs.npmjs.com/about-npm/) where you can find all open source packages [here](npmjs.com) and (b) a command line tool (CLI) for installing node packages from this registry (and others).
 
 
- * **VSCode**
- Visual Studio Code  is a lightweight but powerful source code editor you can download the latest version on [code.visualstudio.com](https://code.visualstudio.com/)
+## Visual Studio Code (aka VSCode/ vs code)
+ Visual Studio Code is a lightweight but powerful source code editor. You can download the latest version on [code.visualstudio.com](https://code.visualstudio.com/)
 
-* **VSCode Plugins**
+## VSCode Plugins
 VSCode has some realy helpful extensions. For intalling extensions follow [these instructions](https://code.visualstudio.com/docs/editor/extension-gallery).
 We recommend the following extensions:
 
@@ -60,8 +60,9 @@ We recommend the following extensions:
   The easiest way to install them is to search for each in the vscode extention tab (Ctrl+Shift+X)
 
 
-## Getting Started
+# Getting Started
 
+## Install node packages
 Your project configuration is defined in the Node configuration file 'package.json'. In this file all the required Node packages for this project are defined.
 These packages will be installed by the folling CLI command. Open your console and enter:
 
@@ -82,7 +83,7 @@ found 0 vulnerabilities
 
 All installed packages will appear in the node_modules folder. Every time the package.json is updated, this folder can be updated using `npm install`.
 
-**Jest**
+## Jest
 
 Jest is used for unit testing your code. You can find an example file with the corresponding test in this repo.
 
@@ -103,17 +104,24 @@ npm test example-code
 npm test *test.ts
 ```
 
-* You can also use Jest to debug your code.
-The conifg needed is already in the .vscode folder.
+## Debugging in vs code
 
-  * Use the debug tab (Ctrl+Shift+D), select the 'Debug Jest Tests' option in the upper left corner and press the green start button this will run all tests in debug mode.
+You can also use Jest to debug your code. The config is stored in .vscode/launch.json.
 
-  * If you want to run a single test open your launch.json file in the .vscode folder. in the 'runtimeArgs' object is a comment for the filename you want to singel test. simply insert your filename and uncomment it then start the debuger again.
+For debugging:
+
+- use the debug tab (Ctrl+Shift+D),
+- select the 'Debug Jest Tests' option in the upper left corner, and
+- press the green start button this will run all tests in debug mode.
+
+If you want to run a single test open your launch.json file in the .vscode folder:
+- in the 'runtimeArgs' object is a comment for the filename you want to singel test,
+- insert your filename and uncomment it, and
+- start the debuger again.
 
 For more information on how to use jest visit [jestjs.io](https://jestjs.io/docs/en/getting-started)
 
-
-**ESLint & Prettier**
+## ESLint & Prettier
 
 For better code formating install the two libs in your project folder as devDependencies.
 
@@ -123,13 +131,17 @@ npm install -D eslint
 # dito
 npm install -D prettier
 ```
-or install them globally for general use using the -g prefix
+
+Alternatively install them globally for general usasge using the -g prefix
  ```bash
 npm install -g eslint
 ```
 
-You can use the two basic config files in this repo.
+You can use these two basic config files in this repo:
+- .eslintrc.js
+- .prettierrc
+
 If you want to personalise your config visit the following sites for more information:
-+ [prettier config](https://prettier.io/docs/en/options.html)
-+ [eslint config](https://eslint.org/docs/user-guide/configuring)
+- [prettier config](https://prettier.io/docs/en/options.html)
+- [eslint config](https://eslint.org/docs/user-guide/configuring)
 
