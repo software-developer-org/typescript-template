@@ -1,0 +1,7 @@
+{
+    "liveServer.settings.port": 5501,
+    "eslint.alwaysShowStatus": true,
+    "eslint.debug": true,
+    "eslint.format.enable": true
+    
+}

@@ -2,27 +2,38 @@
 
 ## Install Neccessary Software
 
-* **Git**
+* **Git:**
 
- To install and configure git follow this instructions [git-started](https://github.com/software-developer-org/git-started).
+To install and configure git follow this instructions [git-started](https://github.com/software-developer-org/git-started).
+
+For a more detailed explenation on git and gitHub with exercises 
+visit [git-bootcamp](https://github.com/software-developer-org/bootcamp)
+
  
 
-* **Node.js**
+* **Node.js:**
 
-You can find the latest version for your system at [nodejs.org](https://nodejs.org/en/) simply install it and your good to go.
+You can find the latest version for your system at [nodejs.org](https://nodejs.org/en/).
 
+ Use the LTS version, simply install it and your good to go.
 
-* **TypeScript**
+ * **VSCode**
+ Visual Studio Code  is a lightweight but powerful source code editor you can download the latest version on [code.visualstudio.com](https://code.visualstudio.com/)
 
-After you installed node.js you cann install TypeScript with
+* **VSCode Plugins**
+VSCode has some realy helpfull extensions.
+We recommend installing the following four:
 
-```bash
-npm install -g typescript
-```
+  * [ESLint](https://eslint.org/)
+  * [Prettier- Code formatter](https://prettier.io/)
+  * [Prettier ESLint](https://github.com/prettier/prettier-eslint)
+  * [Git History](https://github.com/DonJayamanne/gitHistoryVSCode)
+
 
 ## Setup Developer Environment
 
 **For your Conveniance**
+
 You can now clone this repo, personalize the package.json and run
  ```bash
 npm install 
