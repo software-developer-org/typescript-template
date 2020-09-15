@@ -11,28 +11,37 @@ by pressing the fork button on the upper right side.
 * change the package.json to your needs
 * ...enjoy with your new project :)!
 
-## Install Neccessary Software
+# Setup tool chain
 
 * **Git:**
 
-To install and configure git follow this instructions [git-started](https://github.com/software-developer-org/git-started).
+Install and configure git following this [git-started](https://github.com/software-developer-org/git-started) as a basic tutorial.
 
-For a more detailed explenation on git and gitHub with exercises
-visit [git-bootcamp](https://github.com/software-developer-org/bootcamp)
+In case you are new to git: step back, take your time, and work through the tutorial at your own speed! git is tool you will work on a daily basis. The better you understand and dive deeper into it, the more productive you will be on your daily business!
 
-
+Once you have mastered the basics of git followed these intermediate [git-bootcamp](https://github.com/software-developer-org/bootcamp) exercises.
 
 * **Node.js:**
 
-You can find the latest version for your system at [nodejs.org](https://nodejs.org/en/).
+You can find the latest version for your system at [nodejs.org](https://nodejs.org/en/). There are two versions:
 
- Use the LTS version, simply install it and your good to go.
+- a long time support version (LTS): which should be used on production
+- latest version: if you are curios about the latest Node features
+
+If you are not implementing in Node, or do just TypeScript, then go for the LTS. This will also make your life easier when integrating other projects or apis.
+
+* **Node Package Manager (npm)**
+
+NOTE: If you install Node.js it also includes npm.
+
+npm is (a) a [registry](https://docs.npmjs.com/about-npm/) where you can find all open source packages [here](npmjs.com) and (b) a command line tool (CLI) for installing node packages from this registry (and others).
+
 
  * **VSCode**
  Visual Studio Code  is a lightweight but powerful source code editor you can download the latest version on [code.visualstudio.com](https://code.visualstudio.com/)
 
 * **VSCode Plugins**
-VSCode has some realy helpfull extensions. For intalling extensions follow [these instructions](https://code.visualstudio.com/docs/editor/extension-gallery).
+VSCode has some realy helpful extensions. For intalling extensions follow [these instructions](https://code.visualstudio.com/docs/editor/extension-gallery).
 We recommend the following extensions:
 
   * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
@@ -43,28 +52,47 @@ We recommend the following extensions:
   The easiest way to install them is to search for each in the vscode extention tab (Ctrl+Shift+X)
 
 
-## Setup Developer Environment
+## Getting Started
 
-Finally in your 'myrepo' folder run
- ```bash
-npm install
+Your project configuration is defined in the Node configuration file 'package.json'. In this file all the required Node packages for this project are defined.
+These packages will be installed by the folling CLI command. Open your console and enter:
+
+```bash
+> npm install
+# the following is only output...
+npm WARN typescript-template@1.0.0 No repository field.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.3 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.3: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+added 621 packages from 373 contributors and audited 622 packages in 13.291s
+
+21 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
 ```
 
-This creates a basic setup for your project.
-
+All installed packages will appear in the node_modules folder. Every time the package.json is updated, this folder can be updated using `npm install`.
 
 **Jest**
 
-Jest is used for unit testing your code.
-You can find an example file with the corresponding test in this repo.
+Jest is used for unit testing your code. You can find an example file with the corresponding test in this repo.
 
-* to start the test simply run
- ```bash
-npm test <filename>
+All tests can be started by:
+
+```bash
+npm test
 ```
-in our case
- ```bash
+
+Note: `npm test` points to a script named 'test' as defined in package.json. In this case it is a shortform for `npx jest`.
+
+Jest allows a TestPathPattern (see help using `npx jest --help`). Examples:
+
+```bash
+# run all tests containing the pattern 'example-code'
 npm test example-code
+# run all tests starting ending with test.ts
+npm test *test.ts
 ```
 
 * You can also use Jest to debug your code.
@@ -82,7 +110,9 @@ For more information on how to use jest visit [jestjs.io](https://jestjs.io/docs
 For better code formating install the two libs in your project folder as devDependencies.
 
 ```bash
+# This adds the eslint package into package.json and installs it
 npm install -D eslint
+# dito
 npm install -D prettier
 ```
 or install them globally for general use using the -g prefix
@@ -91,7 +121,7 @@ npm install -g eslint
 ```
 
 You can use the two basic config files in this repo.
-If you want to personalice your conifg visit the following sites for more information:
+If you want to personalise your config visit the following sites for more information:
 + [prettier config](https://prettier.io/docs/en/options.html)
 + [eslint config](https://eslint.org/docs/user-guide/configuring)
 
