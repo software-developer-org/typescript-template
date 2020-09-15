@@ -1,5 +1,16 @@
 # Typescript Project Setup Guide
 
+This is an empty template for creating TypeScript projects. It also includes ESLint and Jest.
+
+The easiest way of creating a new project is by forking this into a new GitHub repository:
+* fork this repo on [GitHub](https://github.com/software-developer-org/typescript-template)
+by pressing the fork button on the upper right side.
+* choose the account you want your fork (your new repo) to be placed
+* click on the settings button in your forked repo and change the name e.g. to 'myproject'
+* open a console / bash and get a local copy using `git clone https://github.com/youraccount/yourproject'
+* change the package.json to your needs
+* ...enjoy with your new project :)!
+
 ## Install Neccessary Software
 
 * **Git:**
@@ -34,19 +45,7 @@ We recommend the following extensions:
 
 ## Setup Developer Environment
 
-**For your Conveniance**
-
-When finished follow these steps to change the template to your own repository.
-* fork this repo on [GitHub](https://github.com/software-developer-org/typescript-template)
-by pressing the fork button on the upper right side.
-
-* choose the account you want the fork to be placed
-
-* click on the settings button in your forked repo and change the name e.g. 'myproject'
-
-* clone your 'myproject' repo and change the package.json to your needs.
-
-* finally in your 'myrepo' folder run
+Finally in your 'myrepo' folder run
  ```bash
 npm install
 ```
