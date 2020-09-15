@@ -1,7 +1,7 @@
 {
   "name": "typescript-template",
   "version": "1.0.0",
-  "description": "<project description>",
+  "description": "A template for TypeScript containing ESLint, Prettier and Jest",
   "scripts": {
     "test": "jest",
     "build": "tsc"
