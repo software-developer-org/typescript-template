@@ -56,7 +56,26 @@ This creates a basic setup for your project.
 
 **Jest**
 
---TO DOO--
+Jest is used for unit testing your code.
+You can find an example file with the corresponding test in this repo.
+
+* to start the test simply run 
+ ```bash
+npm test <filename>
+``` 
+in our case
+ ```bash
+npm test example-code
+``` 
+
+* You can also use Jest to debug your code.
+The conifg needed is already in the .vscode folder.
+  
+  * Use the debug tab (Ctrl+Shift+D), select the 'Debug Jest Tests' option in the upper left corner and press the green start button this will run all tests in debug mode. 
+
+  * If you want to run a single test open your launch.json file in the .vscode folder. in the 'runtimeArgs' object is a comment for the filename you want to singel test. simply insert your filename and uncomment it then start the debuger again.
+  
+
 
 For more information on how to use jest visit [jestjs.io](https://jestjs.io/docs/en/getting-started)
 
@@ -74,7 +93,7 @@ or install them globally for general use using the -g prefix
 npm install -g eslint
 ``` 
 
-You can use the two config files in this repo.
+You can use the two basic config files in this repo.
 If you want to personalice your conifg visit the following sites for more information:
 + [prettier config](https://prettier.io/docs/en/options.html)
 + [eslint config](https://eslint.org/docs/user-guide/configuring)
