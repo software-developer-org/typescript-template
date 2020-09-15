@@ -21,13 +21,13 @@ You can find the latest version for your system at [nodejs.org](https://nodejs.o
  Visual Studio Code  is a lightweight but powerful source code editor you can download the latest version on [code.visualstudio.com](https://code.visualstudio.com/)
 
 * **VSCode Plugins**
-VSCode has some realy helpfull extensions.
-We recommend installing the following four:
+VSCode has some realy helpfull extensions. For intalling extensions follow [these instructions](https://code.visualstudio.com/docs/editor/extension-gallery).
+We recommend the following extensions:
 
-  * [ESLint](https://eslint.org/)
-  * [Prettier- Code formatter](https://prettier.io/)
-  * [Prettier ESLint](https://github.com/prettier/prettier-eslint)
-  * [Git History](https://github.com/DonJayamanne/gitHistoryVSCode)
+  * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+  * [Prettier ESLint](https://marketplace.visualstudio.com/items?itemName=rvest.vs-code-prettier-eslint)
+  * [Prettier- Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+  * [Git History](https://marketplace.visualstudio.com/items?itemName=donjayamanne.githistory)
 
   The easiest way to install them is to search for each in the vscode extention tab (Ctrl+Shift+X)
 
