@@ -5,4 +5,5 @@ describe('Testing my test function', () => {
     console.log = jest.fn();
     helloWorld();
     expect(console.log).toHaveBeenCalled();
-  });
+  })
+})
