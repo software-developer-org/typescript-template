@@ -29,57 +29,34 @@ We recommend installing the following four:
   * [Prettier ESLint](https://github.com/prettier/prettier-eslint)
   * [Git History](https://github.com/DonJayamanne/gitHistoryVSCode)
 
+  The easiest way to install them is to search for each in the vscode extention tab (Ctrl+Shift+X)
+
 
 ## Setup Developer Environment
 
 **For your Conveniance**
 
-You can now clone this repo, personalize the package.json and run
+When finished follow these steps to change the template to your own repository.
+* fork this repo on [GitHub](https://github.com/software-developer-org/typescript-template)
+by pressing the fork button on the upper right side.
+
+* choose the account you want the fork to be placed
+
+* click on the settings button in your forked repo and change the name e.g. 'myproject'
+
+* clone your 'myproject' repo and change the package.json to your needs.
+
+* finally in your 'myrepo' folder run
  ```bash
 npm install 
 ``` 
 
-This creates a basic setup for your projekt.
+This creates a basic setup for your project.
 
 
 **Jest**
 
-If you want to use jest to test your code you have to set it up for typescript.
-
-*You can skip these steps if you clone this repo*
-
-
-First install jest in your projekt folder
-```bash
-npm i -D jest
-```
-Then install this to libs:
-
-Types for typescript & jest
-```bash
-npm i -D @types
-```
-And ts-test which compiles first and then runs the tests
-```bash
-npm i -D ts-jest
-```
-
-Creating a jest.config.js file in the root of the project with the following content:
-
-```bash
-module.exports = {
-   preset: 'ts-jest',
-   testEnvironment: 'node',
-   };
-   ```
-At last add this scripts to your package.json
-
-```bash
-"scripts": {
-    "test": "jest",
-    "built": "tsc"
-},
-```
+--TO DOO--
 
 For more information on how to use jest visit [jestjs.io](https://jestjs.io/docs/en/getting-started)
 
