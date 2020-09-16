@@ -147,3 +147,31 @@ If you want to personalise your config visit the following sites for more inform
 
 - [prettier config](https://prettier.io/docs/en/options.html)
 - [eslint config](https://eslint.org/docs/user-guide/configuring)
+
+## Scripts
+
+We added three other scripts in the package.json file.
+
+Two scripts for eslint:
+
+- To check your projekts formating and errors use the comand:
+
+```bash
+npm  run lint
+```
+
+- And with this second command elsint will fix al autofixable problems:
+
+```bash
+npm  run fix
+```
+
+And one for typescript:
+
+This command creates a new folder and compiles your projekt files from typescript into plain javascript.
+
+```bash
+npm  run build
+```
+
+It also clears any previously builded files bevor compiling.
