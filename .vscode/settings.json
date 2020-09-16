@@ -1,6 +1,15 @@
 {
-    "liveServer.settings.port": 5501,
-    "eslint.alwaysShowStatus": true,
-    "eslint.debug": true,
-    "eslint.format.enable": true
+  "liveServer.settings.port": 5501,
+  "eslint.debug": true,
+  "eslint.format.enable": true,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "prettier.disableLanguages": ["js"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "files.autoSave": "onFocusChange"
 }
