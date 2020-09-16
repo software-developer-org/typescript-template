@@ -116,11 +116,23 @@ For debugging:
 - select the 'Debug Jest Tests' option in the upper left corner, and
 - press the green start button this will run all tests in debug mode.
 
-If you want to run a single test open your launch.json file in the .vscode folder:
+If you want to run a single test open your launch.json file (CTRL+SHIFT+P to open a file) in the .vscode folder and uncomment the filename:
 
-- in the 'runtimeArgs' object is a comment for the filename you want to singel test,
-- insert your filename and uncomment it
-- start the debuger again.
+```json
+{
+...
+    "configurations": [
+...
+        {
+...
+            "runtimeArgs": [
+...
+              //"<filename>", // uncomment in case only one test should be started
+...
+            ],
+...
+}
+```
 
 For more information on how to use jest visit [jestjs.io](https://jestjs.io/docs/en/getting-started)
 
