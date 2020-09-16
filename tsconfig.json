@@ -8,6 +8,6 @@
     "lib": ["es6", "dom"],
     "esModuleInterop": true
   },
-  "include": ["../**/*.ts"],
+  "include": ["./**/*.ts"],
   "exclude": ["node_modules"]
 }
