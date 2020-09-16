@@ -4,7 +4,7 @@
   "description": "A template for TypeScript containing ESLint, Prettier and Jest",
   "scripts": {
     "test": "jest",
-    "build": "tsc",
+    "build": "rm -rf dist/* && tsc",
     "lint": "eslint .",
     "fix": "eslint . --fix"
   },
