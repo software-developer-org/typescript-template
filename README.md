@@ -138,21 +138,6 @@ For more information on how to use jest visit [jestjs.io](https://jestjs.io/docs
 
 ## ESLint & Prettier
 
-For better code formating install the two libs in your project folder as devDependencies.
-
-```bash
-# This adds the eslint package into package.json and installs it
-npm install -D eslint
-# dito
-npm install -D prettier
-```
-
-Alternatively install them globally for general usasge using the -g prefix
-
-```bash
-npm install -g eslint
-```
-
 You can use these two basic config files in this repo:
 
 - .eslintrc.js
