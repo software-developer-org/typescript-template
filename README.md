@@ -25,7 +25,7 @@ Now you can go to '[Compare](https://github.com/software-developer-org/typescrip
 
 Install and configure git following this [git-started](https://github.com/software-developer-org/git-started) as a basic tutorial.
 
-In case you are new to git: step back, take your time, and work through the tutorial at your own speed! git is tool you will work on a daily basis. The better you understand and dive deeper into it, the more productive you will be on your daily business!
+In case you are new to git: step back, take your time, and work through the tutorial at your own speed! git is a tool you will work with on a daily basis. The better you understand and dive deeper into it, the more productive you will be on your daily business!
 
 Once you have mastered the basics of git followed these intermediate [git-bootcamp](https://github.com/software-developer-org/bootcamp) exercises.
 
@@ -104,7 +104,7 @@ npm test example-code
 npm test *test.ts
 ```
 
-## Debugging in vs code
+## Debugging in VSCode
 
 You can also use Jest to debug your code. The config is stored in .vscode/launch.json.
 
@@ -116,7 +116,7 @@ For debugging:
 
 If you want to run a single test open your launch.json file in the .vscode folder:
 - in the 'runtimeArgs' object is a comment for the filename you want to singel test,
-- insert your filename and uncomment it, and
+- insert your filename and uncomment it
 - start the debuger again.
 
 For more information on how to use jest visit [jestjs.io](https://jestjs.io/docs/en/getting-started)
