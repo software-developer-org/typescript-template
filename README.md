@@ -102,6 +102,10 @@ Jest allows a TestPathPattern (see help using `npx jest --help`). Examples:
 ```bash
 # run all tests containing the pattern 'example-code'
 npm run test example-code
+
+# run all tests containing the pattern 'array-exercise'
+npm run test array-exercise
+
 # run all tests ending with test.ts
 npm run test *test.ts
 ```
@@ -175,3 +179,16 @@ npm  run build
 ```
 
 It also clears any previously builded files bevor compiling.
+
+## New to JavaScript and TypeScript?
+
+Start coding and open the array-exercise-001.test.ts file. Check out these resources:
+
+- additional resources on JavaScript check the Mozilla Developer Network (MDN, see below).
+- especially the reference on [Arrays on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+# Resources
+
+- [Mozilla Developer Network - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [JavaScript tutorials on W3Schools](https://www.w3schools.com/js/default.asp)
+- [YouTube: Functional Programming with JavaScript](https://www.youtube.com/watch?v=sCAR8ZPM6ew)
