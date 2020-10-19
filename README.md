@@ -2,7 +2,19 @@
 
 This is an empty template for creating TypeScript projects. It also includes ESLint and Jest.
 
-The easiest way of creating a new project is by forking this into a new GitHub repository:
+You have two ways of creating a new project:
+1. is by [forking](https://guides.github.com/activities/forking/)
+2. is by [duplicating](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/duplicating-a-repository)
+
+### Why forking?
+
+Have a look at this [fork](https://github.com/taitruong/typescript-test). In the meanwhile the main repo has changed. In the forked repo you see something like this:
+
+> This branch is XYZ commits behind software-developer-org:master. | Pull request | Compare
+
+Now you can go to '[Compare](https://github.com/software-developer-org/typescript-template/compare/master...taitruong:master)' and click on '[switching the base for your comparison](https://github.com/taitruong/typescript-test/compare/master...software-developer-org:master)' and you can create a pull request for getting all the changes into your fork.
+
+## Forking
 
 - fork this repo on [GitHub](https://github.com/software-developer-org/typescript-template)
   by pressing the fork button on the upper right side.
@@ -12,13 +24,37 @@ The easiest way of creating a new project is by forking this into a new GitHub r
 - change the package.json to your needs
 - ...enjoy with your new project :)!
 
-## Why forking?
+### Why duplicating?
 
-Have a look at this [fork](https://github.com/taitruong/typescript-test). In the meanwhile the main repo has changed. In the forked repo you see something like this:
+With _git clone --bare_ you will get all of the tags copied, local branches, no remote tracking branches. That is, all branches are copied as is, and it's set up completely independent, with no expectation of fetching again. Any remote branches (in the cloned remote) and other refs are completely ignored. Your new GitHub repository will now not be affected by changes in the initial repo, like forking, anymore.
 
-> This branch is XYZ commits behind software-developer-org:master. | Pull request | Compare
 
-Now you can go to '[Compare](https://github.com/software-developer-org/typescript-template/compare/master...taitruong:master)' and click on '[switching the base for your comparison](https://github.com/taitruong/typescript-test/compare/master...software-developer-org:master)' and you can create a pull request for getting all the changes into your fork.
+## Duplicating a repository
+
+- go to your GitHub account
+- create a new repository e.g. myprojects-typescript-template
+- open Git Bash
+- create a bare clone of the repository
+```
+$ git clone --bare https://github.com/software-developer-org/typescript-template
+```
+- navigate to the repository (a bare clone repo will end with _.git_!)
+```
+$ cd typescript-template.git
+```
+- mirror-push to your new repository on GitHub
+- doing a ['mirror-push'](https://git-scm.com/docs/git-push) means that, after the push, your remote repo on GitHub is exactly the same like your local local repository (which you bare cloned before)  
+```
+$ git push --mirror https://github.com/_yourusername_/myprojects-typescript-template.git
+```
+- remove the temporary local repository
+```
+$ cd ..
+$ rm -rf typescript-template.git
+```
+## Why duplicating?
+
+With [_git clone --bare_](https://git-scm.com/docs/git-clone) you will get all of the tags copied, local branches, no remote tracking branches. That is, all branches are copied as is, and it's set up completely independent, with no expectation of fetching again. Any remote branches (in the cloned remote) and other refs are completely ignored. Your new GitHub repository will now not be affected by changes in the initial repo, like forking, anymore.
 
 # Setup tool chain
 
