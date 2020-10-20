@@ -3,8 +3,8 @@
 This is an empty template for creating TypeScript projects. It also includes ESLint and Jest.
 
 You have two ways of creating a new project:
-1. is by [forking](https://guides.github.com/activities/forking/)
-2. is by [duplicating](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/duplicating-a-repository)
+1. by [forking](https://guides.github.com/activities/forking/)
+2. by [duplicating](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/duplicating-a-repository)
 
 ### Why forking?
 
@@ -32,7 +32,7 @@ With _git clone --bare_ you will get all of the tags copied, local branches, no 
 ## Duplicating a repository
 
 - go to your GitHub account
-- create a new repository e.g. myprojects-typescript-template
+- create a new repository i.e. myprojects-typescript-template
 - open Git Bash
 - create a bare clone of the repository
 ```
@@ -43,7 +43,7 @@ $ git clone --bare https://github.com/software-developer-org/typescript-template
 $ cd typescript-template.git
 ```
 - mirror-push to your new repository on GitHub
-- doing a ['mirror-push'](https://git-scm.com/docs/git-push) means that, after the push, your remote repo on GitHub is exactly the same like your local local repository (which you bare cloned before)  
+- doing a ['mirror-push'](https://git-scm.com/docs/git-push) means that, after the push, your remote repo on GitHub is exactly the same like your local repository (which you bare cloned before)  
 ```
 $ git push --mirror https://github.com/_yourusername_/myprojects-typescript-template.git
 ```
@@ -52,9 +52,11 @@ $ git push --mirror https://github.com/_yourusername_/myprojects-typescript-temp
 $ cd ..
 $ rm -rf typescript-template.git
 ```
-## Why duplicating?
-
-With [_git clone --bare_](https://git-scm.com/docs/git-clone) you will get all of the tags copied, local branches, no remote tracking branches. That is, all branches are copied as is, and it's set up completely independent, with no expectation of fetching again. Any remote branches (in the cloned remote) and other refs are completely ignored. Your new GitHub repository will now not be affected by changes in the initial repo, like forking, anymore.
+> **TODO:** 
+> HEADER: Using your duplicated repository together with the intitial repository in daily gitworkflow
+> - short explanation worklow -> link 
+> - short setup for remote add ->
+> - example for working
 
 # Setup tool chain
 
