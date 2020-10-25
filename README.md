@@ -41,6 +41,8 @@ $ git clone --bare https://github.com/software-developer-org/typescript-template
 - navigate to the repository (a bare clone repo will end with _.git_!)
 ```
 $ cd typescript-template.git
+
+$ typescript-template.git (BARE:master)
 ```
 - mirror-push to your new repository on GitHub
 - doing a ['mirror-push'](https://git-scm.com/docs/git-push) means that, after the push, your remote repo on GitHub is exactly the same like your local repository (which you bare cloned before)  
@@ -50,13 +52,16 @@ $ git push --mirror https://github.com/_yourusername_/myprojects-typescript-temp
 - remove the temporary local repository
 ```
 $ cd ..
-$ rm -rf typescript-template.git
+$ rm -rf typescript-template.git/
 ```
-> **TODO:** 
-> HEADER: Using your duplicated repository together with the intitial repository in daily gitworkflow
-> - short explanation worklow -> link 
-> - short setup for remote add ->
-> - example for working
+- as explained above, a _bare clone_ has no working tree, your not connected to the remote repository. its just the repository data!
+so, you have to clone your new remote repo to your local workspace 
+```
+$ git clone https://github.com/_yourusername_/myprojects-typescript-template.git
+```
+## Using duplicates and remotes in daily work
+
+If you interested when to use 'forking', 'duplicating' or both of them, please read about [branches and workflow](https://github.com/software-developer-org/sandbox/blob/feature/34-branches/challenge-010/00034-gitflow_summary.md).
 
 # Setup tool chain
 
